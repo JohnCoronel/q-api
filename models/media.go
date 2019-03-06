@@ -11,6 +11,18 @@ type Movie struct {
 	title string
 }
 
+type Rating struct {
+	id string
+	score int
+	userId string
+}
+
+type Review struct {
+	id string
+	review string
+	userId string
+}
+
 func (Movie) Rate(score int) (error, int) {
 	return nil, score
 }
